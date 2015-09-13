@@ -1,3 +1,5 @@
+
+
 # common code to load the dates in question
 full <-
   read.table(
@@ -17,6 +19,9 @@ ourdata <-
 # end common code to load the dates in question
 
 
-png(filename="plot1.png")
-hist(ourdata$Global_active_power, col="red", main="Global Active Power",xlab="Global Active Power (kilowatts)")
+png(filename = "plot1.png")
+hist(
+  ourdata$Global_active_power, col = "red", main = "Global Active Power",xlab =
+    "Global Active Power (kilowatts)"
+)
 dev.off()
